@@ -44,4 +44,5 @@ class Customer:
     def retrieve_coffees_within_price_range(self, min_price=0, max_price=999):
         filtered_transactions = list(filter(lambda transaction: min_price <= transaction.price <= max_price, self.transactions))
         return [filtered_transaction.coffee for filtered_transaction in filtered_transactions]
-        #return list(coffee for coffee in self.transactions if min_price <= coffee.price <= max_price)
+    #def retrieve_coffees_within_price_range(self, min_price=0, max_price=999):
+        #return [coffee for coffee in self.coffee_list if min_price <= coffee.price <= max_price]
